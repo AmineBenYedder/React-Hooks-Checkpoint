@@ -1,7 +1,7 @@
 const FilterMovie=({SetInput})=>{
     return(
         <>
-        <input onChange={(event)=>SetInput(event.target.value)} />
+        <input className="search" type="search" placeholder="Search..." onChange={(event)=>SetInput(event.target.value)} />
         </>
 
     )

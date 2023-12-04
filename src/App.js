@@ -19,7 +19,7 @@ const addnewMovie= (newMovie)=> {
       <header className='App-header'>
         <h2>Streaming live°موقع أمين للأفلام</h2>
         <h2>TOP 6 FILMS</h2>
-        Search : <FilterMovie SetInput={SetInput}/>
+        <FilterMovie SetInput={SetInput}/>
       </header>
       <section>
         <MovieList movies={movies} input={input}/>

@@ -11,7 +11,7 @@ h4{
 }
 .App-header {
   background-color: #282c34;
-  min-height: 20vh;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,6 +24,7 @@ h4{
 
 }
 .movie_card {
+  position: relative;
   border-radius: 50px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
@@ -58,3 +59,10 @@ h4{
   color: #61dafb;
 }
 
+.search {
+  width: 260px;
+  border: 1px solid whitesmoke;
+  display: block;
+  padding: 9px 4px 9px 40px;
+  background: transparent no-repeat 13px;
+}
