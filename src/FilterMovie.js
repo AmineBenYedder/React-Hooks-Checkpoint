@@ -1,4 +1,4 @@
-const FilterMovie=(SetInput)=>{
+const FilterMovie=({SetInput})=>{
     return(
         <>
         <input onChange={(event)=>SetInput(event.target.value)} />

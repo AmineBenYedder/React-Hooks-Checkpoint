@@ -5,7 +5,7 @@ const MovieList =({movies,input})=> {
         <>
         <div style={{display:"flex", alignItems:"center",flexDirection: "column", justifyContent: "space-around",flexWrap:"wrap"}}>
             {
-            movies.filter((el)=>el.name.includes(input))
+            movies.filter((el)=>el.name.toUpperCase().includes(input.toUpperCase()))
             .map((el)=>
             <MovieCard el={el}/>
             )
