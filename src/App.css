@@ -1,0 +1,60 @@
+.App {
+  text-align: center;
+}
+
+h1{
+  color: black;
+  font-weight: 400;
+}
+h4{
+  color: #9ac7fa;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.stars{
+  display: flex;
+  justify-content: center;
+
+}
+.movie_card {
+  border-radius: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  transition: all 0.4s;
+  &:hover{
+    transform: scale(1.02);
+    transition: all 0.4s;
+  }
+  .hd{
+    color: gray;
+    border-radius: 5px;
+    border: 10px solid rgba(255,255,255,0.13);
+  }
+}
+.modal {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.formadd {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.App-link {
+  color: #61dafb;
+}
+
