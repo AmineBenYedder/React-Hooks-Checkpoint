@@ -1,6 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import ReactStars from 'react-stars';
+import { Link } from "react-router-dom";
 
 
 const MovieCard =({el})=>{
@@ -25,7 +26,7 @@ const MovieCard =({el})=>{
         <Card.Text>{el.description}</Card.Text>
         <br/>
         <Button variant="danger" style={{backgroundColor:"red",color:'white'}}>PLAY</Button>{' '}
-        <Button variant="primary"style={{backgroundColor:"yellow",color:'black'}}>WATCH TRAILER</Button>
+       <Link to = {`/Trailer/${el.id}`} > <Button variant="primary"style={{backgroundColor:"yellow",color:'black'}}>WATCH TRAILER</Button></Link>
       </Card.Body>
     </Card>
     </div>           

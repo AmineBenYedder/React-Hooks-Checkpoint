@@ -4,6 +4,9 @@ import './App.css';
 import MovieList from './MovieList';
 import AddMovie from './AddMovie';
 import FilterMovie from './FilterMovie';
+import { Route, Routes } from "react-router-dom";
+import Trailer from './Trailer';
+
 
 function App() {
 
@@ -22,10 +25,11 @@ const addnewMovie= (newMovie)=> {
         <FilterMovie SetInput={SetInput}/>
       </header>
       <section>
-        <MovieList movies={movies} input={input}/>
-        <br/>
-        <AddMovie addnewMovie={addnewMovie}/>
-      <br/>
+        <Routes>
+          <Route path='/' element={<MovieList movies={movies} input={input}/>} />
+          <Route path='/Trailer/:IdMovie' element={<Trailer/>}/>
+      </Routes>
+      <AddMovie addnewMovie={addnewMovie}/>
     </section>
     </div>
   );
