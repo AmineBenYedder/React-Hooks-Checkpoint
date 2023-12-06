@@ -24,7 +24,7 @@ const AddMovie=({addnewMovie})=>{
     }
     return(
         <>
-        <button onClick={handleShow} style={{backgroundColor:"green",color:'white',width:'300px'}}>Add movie</button>
+        <button onClick={handleShow} style={{backgroundColor:"green",color:'white',width:'300px',minHeight:'50px'}}>Add movie</button>
         <ReactModal isOpen={show} className="modal" >
             <h2>WANT TO ADD A NEW MOVIE ?</h2>
             <h2>مرحبا بيك </h2>

@@ -29,8 +29,9 @@ const addnewMovie= (newMovie)=> {
           <Route path='/' element={<MovieList movies={movies} input={input}/>} />
           <Route path='/Trailer/:IdMovie' element={<Trailer/>}/>
       </Routes>
-      <AddMovie addnewMovie={addnewMovie}/>
     </section>
+    <br/>
+    <AddMovie addnewMovie={addnewMovie}/>
     </div>
   );
 }
